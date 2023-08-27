@@ -37,7 +37,7 @@
                         <h3 class="fs-3 my-4 px-4 pb-1 fw-bold text-light">Notas</h3>
                         <h2 class= "fs-5 mx-4 fw-bold text-light">Alumno: Emmanuel Lopez Esquivel. Asignatura: Desarrollo Web.</h2>
                         <P class=" fs-6 mx-4 fw-bold text-light">Profesor: Luis Fernando Villafaña.<span class="mx-3"
-                        >  Universidad del sur campus playa del carmen.  5° Cuatrimeste </span></P>
+                        > Universidad del sur campus playa del carmen.  5° Cuatrimeste </span></P>
                     </div>
                 </div>
             </div>
