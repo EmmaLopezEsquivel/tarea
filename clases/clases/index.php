@@ -19,25 +19,25 @@
 <body>
 <style>
     .img{
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
     body {
-        background-color: darkcyan;
+        background-color: slateblue;
     }
     </style>
     
     
     <section >
-            <div class="row w-75 mx-auto  servicio-fila">
-                <div class="col col-lg-12 col-md-12 col-sm-12 d-flex ">
-                    <img src="./img/i1.png"  alt="logo "
+            <div class=" w-75 mx-5 justify-content-center">
+                <div class="d-flex ">
+                    <img src="./img/i1.jpg"  alt="logo "
                     class= "img rounded my-2  mx-6 my-6">
                     <div>
-                        <h3 class="fs-3 my-4 px-4 pb-1 fw-bold text-light">Pagina de notas</h3>
-                        <h2 class= "fs-5 mx-4 fw-bold text-light">Alumno: Jedidiel Toto Garcia. Asignatura: Desarrollo Web.</h2>
-                        <P class=" fs-6 mx-4 fw-bold text-light">Docente: Luis Fernando Villafaña.<span class="mx-3"
-                        >  Universidad del sur campus online.  5° Cuatrimeste </span></P>
+                        <h3 class="fs-3 my-4 px-4 pb-1 fw-bold text-light">Notas</h3>
+                        <h2 class= "fs-5 mx-4 fw-bold text-light">Alumno: Emmanuel Lopez Esquivel. Asignatura: Desarrollo Web.</h2>
+                        <P class=" fs-6 mx-4 fw-bold text-light">Profesor: Luis Fernando Villafaña.<span class="mx-3"
+                        >  Universidad del sur campus playa del carmen.  5° Cuatrimeste </span></P>
                     </div>
                 </div>
             </div>
@@ -46,16 +46,16 @@
     <div class="container h-100" style="padding-top: 1rem;">
         <div class="row justify-content-center align-item-center h-100">
             <div class="cal-12 col-sm-12 col-md-3 mb-3">
-                <div class="card bg-secondary text-light">
+                <div class="card ">
                     <div class="card-body">
                         <form action="./function/insert.php" method="post">
-                            <div class="mb-">
-                                <label class="form-label fw-bold text-light ">Nombre de la nota</label>
-                                <input name="titulo" type="text" class="form-control border-color-success bg-dark text-light">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold ">Asunto de nota</label>
+                                <input name="titulo" type="text" class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label fw-bold text-light">Contenido</label>
-                                <input name="contenido" type="text" class="form-control border-color-primary bg-dark text-light">
+                                <label class="form-label fw-bold ">Informacion de nota</label>
+                                <input name="contenido" type="text" class="form-control">
                             </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-9">
-                <div class="card bg-secondary">
+                <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
                         <table class="table table-dark table-striped">
@@ -72,8 +72,8 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre de la nota</th>
                                 <th scope="col">Contenido</th>
-                                <th scope="col"><i class="bi bi-pencil-square text-primary"></i></th>
-                                <th scope="col"><i class="bi bi-trash-fill text-primary"></i></th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Eliminar</th>
                                 
                             </tr>
                         </thead>
@@ -104,3 +104,4 @@
 </main>
 </body>
 </html>
+

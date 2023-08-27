@@ -1,6 +1,6 @@
 <?php
 
-//print_r($_POST);
+
 
 require("../connection/connection.php");
 

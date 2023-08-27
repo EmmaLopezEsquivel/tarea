@@ -32,31 +32,31 @@ $fila = mysqli_fetch_array($ejecutar);
 <body>
     <style>
     body {
-        background-color: darkcyan;
+        background-color: slateblue;
     }
     </style>
     <header>
-    <?php
-    require ("../partials/navbar.html");
-    ?>
+        <div class=  "justify-content-center align-items-center w-100 mx-5 my-5 " >
+            <h1 class="text-light">Pagina para editar las notas</h1>
+        </div>
     </header>
     <main>
         <div class="container mt-5">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="col-6">
-                    <div class="card bg-secondary text-light">
+                    <div class="card ">
                         
                         <div class="card-body ">
                             <form action="../function/update.php" method="post">
                                 <div class="mb-3">
-                                    <label class="form-label">Titulo</label>
+                                    <label class="form-label fw-bold">Asunto de nota</label>
                                     <input name="titulo" value="<?php echo $fila[ 'titulo' ]; ?>" type="text"
-                                        class="form-control border-color-success bg-dark text-light">
+                                        class="form-control ">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label">contenido</label>
+                                    <label class="form-label fw-bold">Informacion de nota</label>
                                     <input name="contenido" value="<?php echo $fila[ 'contenido' ]; ?>" type="text"
-                                        class="form-control border-color-success bg-dark text-light">
+                                        class="form-control ">
                                 </div>
                                 <input type="hidden" name="id" value="<?php echo $fila[ 'id' ]; ?>">
                                 <button type="submit" class="btn btn-primary">Actualizar</button>
